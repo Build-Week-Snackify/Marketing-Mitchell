@@ -345,15 +345,13 @@ header div div:hover {
   justify-content: center;
   width: 100%;
 }
-.cards .card-row:nth-child(1) {
-  max-width: 70%;
-}
 .cards .card-row {
   display: flex;
   justify-content: space-between;
   height: 20rem;
   width: 100%;
   margin-bottom: 10rem;
+  max-width: 80%;
 }
 .cards .card-row .card {
   display: flex;
