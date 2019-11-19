@@ -357,7 +357,6 @@ header div div:hover {
   .cards .card-row {
     flex-direction: column;
     align-items: center;
-    border: 1px solid red;
     height: 80rem;
     margin: 0 auto;
   }
@@ -374,8 +373,6 @@ header div div:hover {
   height: 100%;
   border-radius: 5px;
   perspective: 1000px;
-  /* Remove this if you don't want the 3D effect */
-  /* This container is needed to position the front and back side */
 }
 .cards .card-row .card .flip-card-inner {
   position: relative;
@@ -384,9 +381,6 @@ header div div:hover {
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  /* Position the front and back side */
-  /* Style the back side */
 }
 .cards .card-row .card .flip-card-inner:hover {
   transform: rotateY(180deg);

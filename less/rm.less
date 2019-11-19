@@ -15,15 +15,12 @@
     margin: 2rem 0 5rem 0;
 
     h2 {
-
       color: @orangeTextColor;
       font-size: 3.5rem;
       font-weight: bold;
-    }
-  }
-
-  //background: #ff631b;
-} //body ends
+    }//h2 ends
+  }//founders ends
+} //about wrap ends ends
 
 .cards {
   display: flex;
@@ -31,11 +28,6 @@
   align-items: center;
   justify-content: center;
   width: 100%; //importante
-  //min-height: 500px;
-
-  // .card-row:nth-child(1) {
-  //   max-width: 70%;
-  // }
 
   .card-row {
     display: flex;
@@ -48,14 +40,13 @@
     @media @width4{
       flex-direction: column;
       align-items: center;
-      border: 1px solid red;
       height: 80rem;
       margin: 0 auto;
 
       .card{
         margin-bottom: 5rem;
-      }
-    }
+      }//card ends
+    }//@media ends
 
     .card {
       display: flex;
@@ -66,10 +57,8 @@
       height: 100%;
 
       border-radius: 5px;
-      perspective: 1000px; /* Remove this if you don't want the 3D effect */
+      perspective: 1000px; 
 
-
-      /* This container is needed to position the front and back side */
       .flip-card-inner {
         position: relative;
         width: 100%;
@@ -78,13 +67,10 @@
         transition: transform 0.8s;
         transform-style: preserve-3d;
 
-
-        /* Do an horizontal flip when you move the mouse over the flip box container */
         &:hover {
           transform: rotateY(180deg);
-        }
+        }//hover ends
 
-        /* Position the front and back side */
         .flip-card-front {
           position: absolute;
           width: 100%;
@@ -105,10 +91,9 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
-          }
+          }//card-img-top ends
         }
 
-        /* Style the back side */
         .flip-card-back {
           border-radius: 5px;
 
@@ -124,11 +109,9 @@
             0 15px 12px rgba(0, 0, 0, 0.22);
           padding: 0.2rem;
           h3 {
-
             font-size: 2rem;
             font-weight: bold;
           }
-
 
           .card-text {
             text-align: center;
