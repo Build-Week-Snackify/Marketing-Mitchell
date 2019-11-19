@@ -353,6 +353,18 @@ header div div:hover {
   margin-bottom: 10rem;
   max-width: 80%;
 }
+@media (max-width: 650px) {
+  .cards .card-row {
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid red;
+    height: 80rem;
+    margin: 0 auto;
+  }
+  .cards .card-row .card {
+    margin-bottom: 5rem;
+  }
+}
 .cards .card-row .card {
   display: flex;
   align-items: center;
@@ -389,10 +401,14 @@ header div div:hover {
   color: black;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
-.cards .card-row .card .flip-card-inner .flip-card-front img {
+.cards .card-row .card .flip-card-inner .flip-card-front .card-img-top {
   border-radius: 5px;
   width: 100%;
   height: 100%;
+  background-image: url(/img/Dwayne_Johnson\ copy.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .cards .card-row .card .flip-card-inner .flip-card-back {
   border-radius: 5px;
@@ -437,6 +453,27 @@ footer .contact address {
   align-items: center;
   justify-content: space-between;
   font-size: 1.3rem;
+}
+@media (max-width: 700px) {
+  footer .contact address {
+    flex-direction: column;
+  }
+}
+@media (max-width: 700px) {
+  footer .contact address .mailing {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 700px) {
+  footer .contact .phone {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 700px) {
+  footer .contact .email {
+    margin-bottom: 2rem;
+  }
 }
 footer .copyright {
   font-size: 1.6rem;
