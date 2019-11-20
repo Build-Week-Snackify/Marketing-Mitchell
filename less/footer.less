@@ -4,6 +4,7 @@ footer {
   display: flex;
   justify-content: space-around;
   height: 170px;
+  
   .contact {
     width: 50%;
     height: 100%;
@@ -22,15 +23,30 @@ footer {
       justify-content: space-between;
       font-size: 1.3rem;
 
+      @media @width3{
+        flex-direction: column;
+      }
+
 
       .mailing {
+
+        @media @width3{
+          text-align: center;
+          margin-bottom: 2rem;
+        }
       }
     }
 
     .phone {
+      @media @width3{
+        margin-bottom:2rem;
+      }
     }
 
     .email {
+      @media @width3{
+      margin-bottom:2rem;
+      }
     }
 
   }
