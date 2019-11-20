@@ -10,7 +10,6 @@
   justify-content: center;
   width: 100%;
 
-
   .founders {
     margin: 2rem 0 5rem 0;
 
@@ -18,8 +17,8 @@
       color: @orangeTextColor;
       font-size: 3.5rem;
       font-weight: bold;
-    }//h2 ends
-  }//founders ends
+    } //h2 ends
+  } //founders ends
 } //about wrap ends ends
 
 .cards {
@@ -37,16 +36,16 @@
     margin-bottom: 10rem;
     max-width: 80%;
 
-    @media @width4{
+    @media @width4 {
       flex-direction: column;
       align-items: center;
       height: 80rem;
       margin: 0 auto;
 
-      .card{
+      .card {
         margin-bottom: 5rem;
-      }//card ends
-    }//@media ends
+      } //card ends
+    } //@media ends
 
     .card {
       display: flex;
@@ -57,7 +56,11 @@
       height: 100%;
 
       border-radius: 5px;
-      perspective: 1000px; 
+      perspective: 1000px;
+
+      &:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
 
       .flip-card-inner {
         position: relative;
@@ -67,9 +70,7 @@
         transition: transform 0.8s;
         transform-style: preserve-3d;
 
-        &:hover {
-          transform: rotateY(180deg);
-        }//hover ends
+        //hover ends
 
         .flip-card-front {
           position: absolute;
@@ -83,87 +84,87 @@
           box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3),
             0 15px 12px rgba(0, 0, 0, 0.22);
 
-            .card-img-top-one{
-              border-radius: 5px;
-              width: 100%;
-              height: 100%;
-              background-image: url(/img/victor-ruiz.png);
-              background-size: cover;
-              background-repeat: no-repeat;
-              background-position: center;
-            }//card-img-top ends
+          .card-img-top-one {
+            border-radius: 5px;
+            width: 100%;
+            height: 100%;
+            background-image: url(/img/victor-ruiz.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+          } //card-img-top ends
 
-            .card-img-top-two{
-              border-radius: 5px;
-              width: 100%;
-              height: 100%;
-              background-image: url(/img/rayven-burns.jpg);
-              background-size: cover;
-              background-repeat: no-repeat;
-              background-position: center;
-            }//card-img-top ends
+          .card-img-top-two {
+            border-radius: 5px;
+            width: 100%;
+            height: 100%;
+            background-image: url(/img/rayven-burns.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+          } //card-img-top ends
 
-            .card-img-top-three{
-              border-radius: 5px;
-              width: 100%;
-              height: 100%;
-              background-image: url(/img/jon-bash.jpg);
-              background-size: cover;
-              background-repeat: no-repeat;
-              background-position: center;
-            }//card-img-top ends
+          .card-img-top-three {
+            border-radius: 5px;
+            width: 100%;
+            height: 100%;
+            background-image: url(/img/jon-bash.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+          } //card-img-top ends
 
-            .card-img-top-four{
-              border-radius: 5px;
-              width: 100%;
-              height: 100%;
-              background-image: url(/img/wilmari-rodriguez.png);
-              background-size: cover;
-              background-repeat: no-repeat;
-              background-position: center;
-            }//card-img-top ends
+          .card-img-top-four {
+            border-radius: 5px;
+            width: 100%;
+            height: 100%;
+            background-image: url(/img/wilmari-rodriguez.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+          } //card-img-top ends
 
-            .card-img-top-five{
-              border-radius: 5px;
-              width: 100%;
-              height: 100%;
-              background-image: url(/img/ami-scott.jpg);
-              background-size: cover;
-              background-repeat: no-repeat;
-              background-position: center;
-            }//card-img-top ends
+          .card-img-top-five {
+            border-radius: 5px;
+            width: 100%;
+            height: 100%;
+            background-image: url(/img/ami-scott.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+          } //card-img-top ends
 
-            .card-img-top-six{
-              border-radius: 5px;
-              width: 100%;
-              height: 100%;
-              background-image: url(/img/sarah-elias.jpg);
-              background-size: cover;
-              background-repeat: no-repeat;
-              background-position: center;
-            }//card-img-top ends
+          .card-img-top-six {
+            border-radius: 5px;
+            width: 100%;
+            height: 100%;
+            background-image: url(/img/sarah-elias.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+          } //card-img-top ends
 
-            .card-img-top-seven{
-              border-radius: 5px;
-              width: 100%;
-              height: 100%;
-              background-image: url(/img/brendan-schatz.jpg);
-              background-size: cover;
-              background-repeat: no-repeat;
-              background-position: center;
-            }//card-img-top ends
+          .card-img-top-seven {
+            border-radius: 5px;
+            width: 100%;
+            height: 100%;
+            background-image: url(/img/brendan-schatz.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+          } //card-img-top ends
 
-            .card-img-top-eight{
-              border-radius: 5px;
-              width: 100%;
-              height: 100%;
-              background-image: url(/img/roberto-banbanaste.jpg);
-              background-size: cover;
-              background-repeat: no-repeat;
-              background-position: center;
-            }//card-img-top ends
+          .card-img-top-eight {
+            border-radius: 5px;
+            width: 100%;
+            height: 100%;
+            background-image: url(/img/roberto-banbanaste.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+          } //card-img-top ends
 
-          .card-img-top-nine{
+          .card-img-top-nine {
             border-radius: 5px;
             width: 100%;
             height: 100%;
@@ -171,9 +172,8 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
-          }//card-img-top ends
+          } //card-img-top ends
         }
-        
 
         .flip-card-back {
           border-radius: 5px;
