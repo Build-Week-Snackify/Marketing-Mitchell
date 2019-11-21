@@ -344,6 +344,7 @@ header div div:hover {
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin-top: 5rem;
 }
 .cards .card-row {
   display: flex;
@@ -399,82 +400,82 @@ header div div:hover {
   border-radius: 5px;
   width: 100%;
   height: 100%;
-  background-image: url(/img/victor-ruiz.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url(/img/victor-ruiz.png);
 }
 .cards .card-row .card .flip-card-inner .flip-card-front .card-img-top-two {
   border-radius: 5px;
   width: 100%;
   height: 100%;
-  background-image: url(/img/rayven-burns.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url(/img/rayven-burns.jpg);
 }
 .cards .card-row .card .flip-card-inner .flip-card-front .card-img-top-three {
   border-radius: 5px;
   width: 100%;
   height: 100%;
-  background-image: url(/img/jon-bash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url(/img/jon-bash.jpg);
 }
 .cards .card-row .card .flip-card-inner .flip-card-front .card-img-top-four {
   border-radius: 5px;
   width: 100%;
   height: 100%;
-  background-image: url(/img/wilmari-rodriguez.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url(/img/wilmari-rodriguez.png);
 }
 .cards .card-row .card .flip-card-inner .flip-card-front .card-img-top-five {
   border-radius: 5px;
   width: 100%;
   height: 100%;
-  background-image: url(/img/ami-scott.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url(/img/ami-scott.jpg);
 }
 .cards .card-row .card .flip-card-inner .flip-card-front .card-img-top-six {
   border-radius: 5px;
   width: 100%;
   height: 100%;
-  background-image: url(/img/sarah-elias.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url(/img/sarah-elias.jpg);
 }
 .cards .card-row .card .flip-card-inner .flip-card-front .card-img-top-seven {
   border-radius: 5px;
   width: 100%;
   height: 100%;
-  background-image: url(/img/brendan-schatz.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url(/img/brendan-schatz.jpg);
 }
 .cards .card-row .card .flip-card-inner .flip-card-front .card-img-top-eight {
   border-radius: 5px;
   width: 100%;
   height: 100%;
-  background-image: url(/img/roberto-banbanaste.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url(/img/roberto-banbanaste.jpg);
 }
 .cards .card-row .card .flip-card-inner .flip-card-front .card-img-top-nine {
   border-radius: 5px;
   width: 100%;
   height: 100%;
-  background-image: url(/img/robert-mitchell.JPG);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url(/img/robert-mitchell.JPG);
 }
 .cards .card-row .card .flip-card-inner .flip-card-back {
   border-radius: 5px;
