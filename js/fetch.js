@@ -34,7 +34,7 @@ class LikeButton extends React.Component {
 
   likeClick() {
     this.setState(prevState => {
-      alert("thank you fot the like");
+      alert("thank you for the like, contact us for more details!");
       return { liked: !prevState.liked };
     });
   }
