@@ -1,0 +1,163 @@
+.about-container {
+  max-width: @maxWidth;
+  margin: 0 auto;
+}
+
+.aboutWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: @fullWidth;
+
+  .founders {
+    margin: 2rem 0 5rem 0;
+
+    h2 {
+      color: @orangeTextColor;
+      font-size: 3.5rem;
+      font-weight: bold;
+    } //h2 ends
+  } //founders ends
+} //about wrap ends ends
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: @fullWidth; 
+  margin-top: 5rem;
+
+  .card-row {
+    display: flex;
+    justify-content: space-between;
+    height: 20rem;
+    width: @fullWidth;
+    margin-bottom: 10rem;
+    max-width: 80%;
+
+    @media @width4 {
+      flex-direction: column;
+      align-items: center;
+      height: 80rem;
+      margin: 0 auto;
+
+      .card {
+        margin-bottom: 5rem;
+      } //card ends
+    } //@media ends
+
+    .card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      width: 20rem;
+      height: @fullHeight;
+
+      border-radius: 5px;
+      perspective: 1000px;
+
+      &:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-inner {
+        position: relative;
+        width: @fullWidth;
+        height: @fullHeight;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+
+        .flip-card-front {
+          position: absolute;
+          width: @fullWidth;
+          height: @fullHeight;
+          backface-visibility: hidden;
+
+          border-radius: 5px;
+          background-color: #bbb;
+          color: black;
+          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3),
+            0 15px 12px rgba(0, 0, 0, 0.22);
+
+          .card-img-top-one {
+            .card-style();
+            background-image: url(/img/victor-ruiz.png);
+          } //card-img-top-one ends
+
+          .card-img-top-two {
+            .card-style();
+            background-image: url(/img/rayven-burns.jpg);
+          } //card-img-top-two ends
+
+          .card-img-top-three {
+            .card-style();
+            background-image: url(/img/jon-bash.jpg);
+          } //card-img-top-three ends
+
+          .card-img-top-four {
+            .card-style();
+            background-image: url(/img/wilmari-rodriguez.png);
+          } //card-img-top-four ends
+
+          .card-img-top-five {
+            .card-style();
+            background-image: url(/img/ami-scott.jpg);
+          } //card-img-top-five ends
+
+          .card-img-top-six {
+            .card-style();
+            background-image: url(/img/sarah-elias.jpg);
+          } //card-img-top-six ends
+
+          .card-img-top-seven {
+            .card-style();
+            background-image: url(/img/brendan-schatz.jpg);
+          } //card-img-top-seven ends
+
+          .card-img-top-eight {
+            .card-style();
+            background-image: url(/img/roberto-banbanaste.jpg);
+          } //card-img-top-eight ends
+
+          .card-img-top-nine {
+            .card-style();
+            background-image: url(/img/robert-mitchell.JPG);            
+          } //card-img-top-nine ends
+        }
+
+        .flip-card-back {
+          border-radius: 5px;
+
+          background-color: @orangeTextColor;
+          color: white;
+          transform: rotateY(180deg);
+          position: absolute;
+          width: @fullWidth;
+          height: @fullHeight;
+          backface-visibility: hidden;
+
+          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3),
+            0 15px 12px rgba(0, 0, 0, 0.22);
+          padding: 0.2rem;
+
+          h3 {
+            font-size: 2rem;
+            font-weight: bold;
+          }
+
+          .card-text {
+            text-align: left;
+            padding: 0 10px;
+            height: @fullHeight;
+
+            font-size: 1.2rem;
+          }
+        } //flip-card-back ends
+      } //flip card inner ends
+    } //flip-card ends
+  }
+}

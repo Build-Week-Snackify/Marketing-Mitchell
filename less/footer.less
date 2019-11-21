@@ -1,0 +1,152 @@
+footer {
+  // background-color: @grayHeaderColor;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 170px;
+  .contact {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white-smoke;
+
+    .address {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      font-size: 1.3rem;
+
+      .addressItem {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+
+        span {
+          font-family: @bodyFont;
+          color: @bodyTextColor;
+          flex-wrap: wrap;
+          display: flex;
+        }
+
+        &:first-child > span {
+          margin-right: auto;
+          flex-direction: column;
+        }
+
+        &:last-child > span {
+          margin-left: auto;
+        }
+      }
+
+      p {
+        margin: 0px;
+      }
+
+      .fa {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 40px;
+        font-size: 2rem;
+        text-decoration: none;
+        margin: 0 0 10px 20px;
+        border-radius: 50%;
+
+        .transition();
+
+        &:hover {
+          box-shadow: @shadow;
+        }
+      }
+
+      .fa-facebook {
+        background: #3b5998;
+        color: white;
+      }
+
+      .fa-twitter {
+        background: #55acee;
+        color: white;
+      }
+
+      .fa-google {
+        background: #dd4b39;
+        color: white;
+      }
+
+      .fa-instagram {
+        background: #125688;
+        color: white;
+      }
+    }
+  }
+  .copyright {
+    font-size: 1.3rem;
+    opacity: 0.7;
+  }
+}
+
+///mitchell's less
+// footer {
+//   // background-color: @grayHeaderColor;
+//   width: 100%;
+//   display: flex;
+//   justify-content: space-around;
+//   height: 170px;
+  
+//   .contact {
+//     width: 50%;
+//     height: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: space-evenly;
+//     background-color: white-smoke;
+
+
+
+//     address {
+//       width: 100%;
+//       display: flex;
+//       align-items: center;
+//       justify-content: space-between;
+//       font-size: 1.3rem;
+
+//       @media @width3{
+//         flex-direction: column;
+//       }
+
+
+//       .mailing {
+
+//         @media @width3{
+//           text-align: center;
+//           margin-bottom: 2rem;
+//         }
+//       }
+//     }
+
+//     .phone {
+//       @media @width3{
+//         margin-bottom:2rem;
+//       }
+//     }
+
+//     .email {
+//       @media @width3{
+//       margin-bottom:2rem;
+//       }
+//     }
+
+//   }
+//   .copyright {
+//     font-size: 1.6rem;
+//   }
+
+// }
+
+
